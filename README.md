@@ -16,9 +16,9 @@ Plataforma de agendamento de serviços de barbeiros.
 
 <br>
 
-<p align="center">
-  <img src=".github/preview.png" width="100%">
-</p>
+![Screenshot_1](https://github.com/ikewagner/ike-barber/assets/25329337/36c232ee-740d-4047-9274-e4b952de03a1)
+
+
 
 ## 🚀 Tecnologias
 
