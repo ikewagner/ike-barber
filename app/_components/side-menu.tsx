@@ -4,7 +4,14 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import { SheetHeader, SheetTitle } from "./ui/sheet";
 import { Avatar, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
-import { CalendarIcon, HomeIcon, LogInIcon, LogOutIcon, UserIcon } from "lucide-react";
+import {
+  CalendarIcon,
+  DiamondIcon,
+  HomeIcon,
+  LogInIcon,
+  LogOutIcon,
+  UserIcon,
+} from "lucide-react";
 import Link from "next/link";
 
 const SideMenu = () => {
@@ -40,7 +47,11 @@ const SideMenu = () => {
             <UserIcon size={32} />
             <h2 className="font-bold">Olá, faça seu login!</h2>
           </div>
-          <Button variant="secondary" className="w-full justify-start" onClick={handleLoginClick}>
+          <Button
+            variant="secondary"
+            className="w-full justify-start"
+            onClick={handleLoginClick}
+          >
             <LogInIcon className="mr-2" size={18} />
             Fazer Login
           </Button>
@@ -56,12 +67,20 @@ const SideMenu = () => {
         </Button>
 
         {data?.user && (
-          <Button variant="outline" className="justify-start" asChild>
-            <Link href="/bookings">
-              <CalendarIcon size={18} className="mr-2" />
-              Agendamentos
-            </Link>
-          </Button>
+          <>
+            <Button variant="outline" className="justify-start" asChild>
+              <Link href="/bookings">
+                <CalendarIcon size={18} className="mr-2" />
+                Agendamentos
+              </Link>
+            </Button>
+            <Button variant="outline" className="justify-start" asChild>
+              <Link href="/bookings">
+                <DiamondIcon size={18} className="mr-2" />
+                Seja Membro
+              </Link>
+            </Button>
+          </>
         )}
       </div>
     </>

@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* styles.css ou tailwind.css */
-.scrollbar-hidden {
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-}
-
-.scrollbar-hidden::-webkit-scrollbar {
-  width: 12px;
-}
-
-.scrollbar-hidden::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-
 @layer base {
   .dark {
     --background: 225 9% 9%;
